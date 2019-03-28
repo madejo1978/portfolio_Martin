@@ -98,8 +98,50 @@ main#home {
 .about-info {
   display: -ms-grid;
   display: grid;
+  grid-gap: 30px;
       grid-template-areas: 'portrait bio bio' 'job1 job2 job3';
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+}
+
+.portrait {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: portrait;
+  margin: auto;
+  border-radius: 50%;
+  border: orange 3px solid;
+}
+
+.bio {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: bio;
+  font-size: 1.5rem;
+}
+
+.job {
+  background: #494949;
+  padding: 0.5rem;
+  border-bottom: orange 3px solid;
+}
+
+.job-1 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: job1;
+}
+
+.job-2 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: job2;
+}
+
+.job-3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: job3;
 }
 /*# sourceMappingURL=main.css.map */
