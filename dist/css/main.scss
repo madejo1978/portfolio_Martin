@@ -63,11 +63,17 @@ header {
   /* the bigger the nummer, the closer */
   width: 100%; }
 
-main {
-  padding: 4rem;
-  height: 100%; }
-  main .icons {
-    margin-top: 1rem; }
+  main {
+    padding: 4rem;
+   // height: 100%;
+        // sticky footer: total page height minus height footer
+        // calc() is ideal function for this
+    min-height: calc(100vh-60px);
+
+    .icons {
+        margin-top: 1rem;
+    }
+  
   main a {
     padding: 0.4rem; }
     main a:hover {
@@ -116,3 +122,10 @@ main {
   grid-area: job3;
 }
 
+#main-footer{
+  text-align: center;
+  padding: 1rem;
+  background: darken($primary-color, 10);
+  color: set-text-color($primary-color);
+  height: 60px;
+}

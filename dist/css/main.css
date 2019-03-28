@@ -144,4 +144,12 @@ main#home {
   -ms-grid-column: 3;
   grid-area: job3;
 }
+
+#main-footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2b2b2b;
+  color: set-text-color(#444);
+  height: 60px;
+}
 /*# sourceMappingURL=main.css.map */
