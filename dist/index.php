@@ -10,7 +10,7 @@
 </head>
 <body id="bg-img"> <!-- background-picture -->
 <div class="bg-overlay"></div>
-    <header>
+<!--     <header>
         <div class="menu-btn">
             <div class="btn-line"></div>
             <div class="btn-line"></div>
@@ -39,7 +39,7 @@
                 </li>
             </ul>
         </nav>
-    </header>
+    </header> -->
 
     <main id="home">
         <h1 class="lg-heading">Martin 
