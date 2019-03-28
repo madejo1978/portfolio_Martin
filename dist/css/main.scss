@@ -10,34 +10,35 @@ $home-image: url(../img/background.jpg);
 $background-opacity: 0.1;
 
 * {
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 @mixin easeOut {
-  transition: all 1.5s ease-out; 
+  transition: all 1.5s ease-out;
 }
 
 @mixin background {
-  @if $show-home-image{
-      &#bg-img{
-          background: $home-image;
-          background-attachment: fixed;
-          background-size: cover;
+  @if $show-home-image {
+    &#bg-img {
+      background: $home-image;
+      background-attachment: fixed;
+      background-size: cover;
 
-          .bg-overlay {
-              position: absolute; /* has to cover the whole body */
-              top: 0;
-              right: 0;
-              width: 100%;
-              height: 100%;
-              z-index: -1;
-              background: rgba($primary-color, $background-opacity); /* rgb-color: creates a color and an opacity */
-          }
-
+      .bg-overlay {
+        position: absolute; /* has to cover the whole body */
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: rgba(
+          $primary-color,
+          $background-opacity
+        ); /* rgb-color: creates a color and an opacity */
       }
+    }
   }
 }
-
 
 body {
   @include background;
@@ -45,77 +46,83 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.5; }
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.5;
+}
 
-  
 h1,
 h2,
 h3 {
   margin: 0;
   font-weight: 400;
-  color: orange; }
-  h1.lg-heading,
-  h2.lg-heading,
-  h3.lg-heading {
-    /* & = the same as h1.lg-heading in css */
-    font-size: 6rem; }
-  h1 .text-secondary,
-  h2 .text-secondary,
-  h3 .text-secondary {
-    color: yellow; }
-  h1.sm-heading,
-  h2.sm-heading,
-  h3.sm-heading {
-    margin-bottom: 2rem;
-    padding: 0.2 rem 1 rem;
-    background: #494949;
-    /* sass light(), parameter 1: origin color 2: brightness rgba is opacity */ }
+  color: orange;
+}
+h1.lg-heading,
+h2.lg-heading,
+h3.lg-heading {
+  /* & = the same as h1.lg-heading in css */
+  font-size: 6rem;
+}
+h1 .text-secondary,
+h2 .text-secondary,
+h3 .text-secondary {
+  color: yellow;
+}
+h1.sm-heading,
+h2.sm-heading,
+h3.sm-heading {
+  margin-bottom: 2rem;
+  padding: 0.2 rem 1 rem;
+  background: #494949;
+  /* sass light(), parameter 1: origin color 2: brightness rgba is opacity */
+}
 
 header {
   position: fixed;
   z-index: 2; /* the bigger the nummer, the closer */
-  width: 100%; }
+  width: 100%;
+}
 
-  main {
-    padding: 4rem;
-   // height: 100%;
-        // sticky footer: total page height minus height footer
-        // calc() is ideal function for this
-    min-height: calc(100vh-60px);
-  }
-    .icons {
-        margin-top: 1rem;
-    }
+main {
+  padding: 4rem;
+  // height: 100%;
+  // sticky footer: total page height minus height footer
+  // calc() is ideal function for this
+  min-height: calc(100vh-60px);
+}
+.icons {
+  margin-top: 1rem;
+}
 
-
-  
-  main a {
-    padding: 0.4rem; }
-    main a:hover {
-      color: yellow;
-      transition: all 1.5s ease-out; }
-  main#home {
-    overflow: hidden h1;
-    margin-top: 20vh; }
+main a {
+  padding: 0.4rem;
+}
+main a:hover {
+  color: yellow;
+  transition: all 1.5s ease-out;
+}
+main#home {
+  overflow: hidden h1;
+  margin-top: 20vh;
+}
 
 .about-info {
   display: grid;
   grid-gap: 30px;
-  grid-template-areas: 
-  'portrait bio bio'
-  'job1 job2 job3';
-  grid-template-columns: 1fr 1fr 1fr // same as repeat(3, 1fr)
+  grid-template-areas:
+    "portrait bio bio"
+    "job1 job2 job3";
+  grid-template-columns: 1fr 1fr 1fr; // same as repeat(3, 1fr)
 }
 
-.portrait{
+.portrait {
   grid-area: portrait;
   margin: auto;
   border-radius: 50%;
   border: $secondary-color 3px solid;
 }
 
-.bio{
+.bio {
   grid-area: bio;
   font-size: 1.5rem;
 }
@@ -126,19 +133,19 @@ header {
   border-bottom: $secondary-color 3px solid;
 }
 
-.job-1{
+.job-1 {
   grid-area: job1;
 }
 
-.job-2{
+.job-2 {
   grid-area: job2;
 }
 
-.job-3{
+.job-3 {
   grid-area: job3;
 }
 
-#main-footer{
+#main-footer {
   text-align: center;
   padding: 1rem;
   background: darken($primary-color, 10);
