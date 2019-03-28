@@ -69,3 +69,11 @@ main {
   main#home {
     overflow: hidden h1;
     margin-top: 20vh; }
+
+.about-info {
+  display: grid;
+  grid-template-areas: 
+  'portrait bio bio'
+  'job1 job2 job3';
+  grid-template-columns: 1fr 1fr 1fr // same as repeat(3, 1fr)
+}
