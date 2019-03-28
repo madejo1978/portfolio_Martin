@@ -20,7 +20,7 @@
       </h2>
       
       <div class="projects">
-          <div class="project">
+          <div class="item">
             <a href="#">
                 <img src="../dist/img/project1.jpg" alt="project">
             </a>
@@ -32,7 +32,7 @@
             </a>          
             </div>
       
-            <div class="project">
+            <div class="item">
             <a href="#">
                 <img src="../dist/img/project2.jpg" alt="project">
             </a>
@@ -44,7 +44,7 @@
             </a>          
             </div>
       
-            <div class="project">
+            <div class="item">
             <a href="#">
                 <img src="../dist/img/project3.jpg" alt="project">
             </a>
@@ -56,7 +56,7 @@
             </a>          
             </div>
       
-            <div class="project">
+            <div class="item">
             <a href="#">
                 <img src="../dist/img/project4.jpg" alt="project">
             </a>
@@ -68,7 +68,7 @@
             </a>          
             </div>
       
-            <div class="project">
+            <div class="item">
             <a href="#">
                 <img src="../dist/img/project5.jpg" alt="project">
             </a>

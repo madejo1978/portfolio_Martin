@@ -5,6 +5,7 @@
 
 $primary-color: #444;
 $secondary-color: orange;
+$third-color: yellow;
 $show-home-image: true;
 $home-image: url(../img/background.jpg);
 $background-opacity: 0.1;
@@ -77,6 +78,10 @@ h3.sm-heading {
   /* sass light(), parameter 1: origin color 2: brightness rgba is opacity */
 }
 
+a{
+  color: $secondary-color;
+}
+
 header {
   position: fixed;
   z-index: 2; /* the bigger the nummer, the closer */
@@ -144,6 +149,24 @@ main#home {
 .job-3 {
   grid-area: job3;
 }
+
+// Portfolio-page
+.projects{
+  display: grid;
+  grid-gap: 0.7rem;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  img{
+    width:100%;
+    border: 3px $secondary-color solid;
+
+    &:hover{
+      opacity: 0.5;
+      @include easeOut;
+    }
+  }
+}
+
 
 #main-footer {
   text-align: center;

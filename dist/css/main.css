@@ -64,6 +64,10 @@ h3.sm-heading {
   /* sass light(), parameter 1: origin color 2: brightness rgba is opacity */
 }
 
+a {
+  color: orange;
+}
+
 header {
   position: fixed;
   z-index: 2;
@@ -143,6 +147,25 @@ main#home {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: job3;
+}
+
+.projects {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 0.7rem;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.projects img {
+  width: 100%;
+  border: 3px orange solid;
+}
+
+.projects img:hover {
+  opacity: 0.5;
+  -webkit-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;
 }
 
 #main-footer {
